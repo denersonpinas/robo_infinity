@@ -6,7 +6,6 @@ public class Obstaculo extends SharedResources
     
     public Obstaculo()
     {
-        xSpeed = 4;
         setImage(obstaculo01);
     }
     

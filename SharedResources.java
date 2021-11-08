@@ -5,10 +5,18 @@ public class SharedResources extends Actor
     protected int animationDelay;
     protected int frame;
     
-    protected int xSpeed = 0;
+    protected int xSpeed = 4;
+    static int scoreInterno = 0;
     public void act()
-    {
-        // Add your action code here.
+    {  
+    }
+    
+    public void velocity(){
+        scoreInterno++;
+        // System.out.println(scoreInterno >= 1000 && scoreInterno <= 2000);
+        if(scoreInterno >= 1000 && scoreInterno <= 2000){
+            xSpeed = 20;
+        }
     }
     
     public void moveLeft()

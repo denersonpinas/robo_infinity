@@ -92,6 +92,7 @@ public class Mundo extends World
             setBackground(bg_01);            
         } else if (this.score > 1001 && this.score < 2000) {
             setBackground(bg_02);
+            this.speed = 45; // PASSAGEM DE NIVEL
         }
     }
     

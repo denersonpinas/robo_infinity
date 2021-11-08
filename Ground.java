@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Ground extends SharedResources
+public class Ground extends SharedResources  
 {   
     // private GreenfootImage ground = new GreenfootImage("ground.png");
     private GreenfootImage img;
@@ -8,14 +8,14 @@ public class Ground extends SharedResources
     public Ground(GreenfootImage img) // Construtor
     {
         this.img = img;
-        xSpeed = 4;
+        // xSpeed = 4;        
     }
     
     public void act()
     {
         setandoImg(this.img);
         moveLeft();
-        removeGround();
+        removeGround();    
     }
     
     public void setandoImg(GreenfootImage img) {
