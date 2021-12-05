@@ -4,13 +4,11 @@ public class Obstaculo extends SharedResources
 {   
     GreenfootImage obstaculo01 = new GreenfootImage("nave.png");
     
-    public Obstaculo()
-    {
+    public Obstaculo(){
         setImage(obstaculo01);
     }
     
-    public void act()
-    {
+    public void act(){
         moveLeft();
         removePipe();
     }

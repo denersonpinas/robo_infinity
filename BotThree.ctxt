@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=BotThree
+comment1.params=
+comment1.target=BotThree()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ setArrayImg()
+comment4.params=
+comment4.target=void\ animateBot()
+numComments=5

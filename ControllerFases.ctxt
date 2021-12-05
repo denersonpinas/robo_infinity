@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ControllerFases
+comment1.params=fase\ score
+comment1.target=ControllerFases(int,\ int)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

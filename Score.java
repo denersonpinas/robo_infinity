@@ -1,14 +1,6 @@
-import greenfoot.*;
-
-public class Score extends SharedResources
-{
-    GreenfootImage scoreImg = new GreenfootImage("score.png");
-    public Score()
-    {
-        setImage(scoreImg);
-    }
+import greenfoot.*;  
+public class Score extends Actor{
     
     public void act(){
-        
     }
 }

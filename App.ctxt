@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=App
+comment0.text=\r\n\ Robot\ Ifinity.\r\n\ \r\n\ @author\ (D\u00EAnerson\ P.;\ Jo\u00E3o;\ Marcos)\ \r\n\ @version\ (1.0.1)\r\n
+comment1.params=
+comment1.target=App()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ prepare()
+numComments=4

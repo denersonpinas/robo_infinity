@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=FaseTwo
+comment1.params=score
+comment1.target=FaseTwo(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ createPiso()
+comment3.text=\r\n\ Cria\u00E7\u00E3o\ do\ Chao\ ap\u00F3s\ ser\ apagado\ e\ Mudan\u00E7a\ de\ Ch\u00E3o\ ap\u00F3s\ mudan\u00E7a\ de\ n\u00EDvel\r\n
+comment4.params=
+comment4.target=void\ prepare()
+numComments=5

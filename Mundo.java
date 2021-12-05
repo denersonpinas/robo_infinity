@@ -33,7 +33,7 @@ public class Mundo extends World
         // Criação de um novo garçon
         Player robot = new Player();
         
-        // Criação de um novo garçon
+        // Criação do score
         Score scoreImg = new Score();
         
         setPaintOrder(Transitions.class, Score.class, Player.class, Obstaculo.class);
@@ -45,17 +45,16 @@ public class Mundo extends World
         addObject(scoreImg, 300, 200);
     }
     
-    public void act() {
-        // FPS
-        Greenfoot.setSpeed(this.speed);
+    public void act() {        
+        Greenfoot.setSpeed(this.speed); // FPS
         
-        // Criação do chão
-        createGround();
+        createGround(); // Criação do chão        
         
-        setBackground();
-        printScore();
+        setBackground(); // Criação do background        
         
-        createObs();  
+        printScore(); // Printando scores na tela        
+        
+        createObs();  // Criação do obstaculo
     }
     
     public void populate()
@@ -64,7 +63,7 @@ public class Mundo extends World
     }    
     
     /*
-     * Criação do Chao após ser apagado
+     * Criação do Chao após ser apagado e Mudança de Chão após mudança de nível
      */
     private void createGround()
     {
@@ -92,45 +91,36 @@ public class Mundo extends World
             setBackground(bg_01);            
         } else if (this.score > 1001 && this.score < 2000) {
             setBackground(bg_02);
-            this.speed = 45; // PASSAGEM DE NIVEL
+            this.speed = 45; // Passagem de nível, ou seja, aumento de velocidade
         }
     }
     
     public void createObs()
-    {
-        // ScoreCollider scoreCollider = new ScoreCollider();
-        
+    {   
+        /*
+         * Temos a incrementação do contador e a cada 100 existe uma verificação do gerador random e se for maior
+         * que o valor estabelecido em cada nivel, adicionamos um obstaculo.
+         */
         Obstaculo obstaculo01 = new Obstaculo();
-        
-       // int obstaculoSpacing = 150;
-        
-       // GreenfootImage image = obstaculo01.getImage();
-        
-        // int numOfPipes = Greenfoot.getRandomNumber(10) + 4;
         
         contador++;        
         if(this.score > 0 && this.score < 1000){            
-            // addObject(new Transitions("white"), getWidth() / 2, getHeight() / 2);
             
             //instância um objeto da classe Random usando o construtor básico
             Random gerador = new Random();
             if(contador == 100) {
-                //if(getObjects(Obstaculo.class).size() < numOfPipes){
                 if(gerador.nextInt(10) > 5){
                     addObject(obstaculo01, getWidth(), 340);                
                 }
-                //}
             }
         } else if (this.score > 1001 && this.score < 2000) {
             
             //instância um objeto da classe Random usando o construtor básico
             Random gerador = new Random();
             if(contador == 100) {
-                //if(getObjects(Obstaculo.class).size() < numOfPipes){
                 if(gerador.nextInt(10) > 3){
                     addObject(obstaculo01, getWidth(), 340);                
                 }
-                //}
             }
         }
         if(contador == 100) {
